@@ -1,0 +1,8 @@
+<input type="text" name="item" [(ngModel)]="nombreItem">
+<button (click)=buscar(nombreItem)>Buscar</button>
+<ul>
+  <li *ngFor="let resultado of resultadoBusqueda.results">
+    <img [src]=resultado.thumbnail> <br> {{resultado.title}} <br> ${{resultado.price}}
+  </li>
+</ul>
+
